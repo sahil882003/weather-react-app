@@ -1,0 +1,292 @@
+body,html,#root,.base{
+    height:100%;
+  }
+  
+  
+  .base {
+    background-image: url('./photos/Rain.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: end;
+    transition: all 250ms ease-in-out;
+    
+  }
+  
+
+  
+  input {
+    background: transparent;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: white;
+    height:40px;
+    width:75%;
+    margin-top:10px;
+    color: #fff;
+  }
+  
+  input::focus {
+    border-color: white; 
+     outline: 0;
+    color: white;
+  
+  }
+  
+  .image{
+    height:80px;
+  }
+  
+  tr{
+    margin-bottom: 8%;
+  }
+  
+  
+  input::placeholder {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  .search{
+    margin-top:16px;
+    height:40px;
+    width:15%;
+    background-color: rgb(254, 126, 80);
+  }
+  hr{
+    width:100%;
+    margin-bottom:80px;
+    margin-top:30px;
+  }
+  .cloc{
+    background-color: transparent;
+    color:white;
+    outline-color: white;
+    width:100%;
+    border-color:white;
+    height:40px;
+    font-size:1.25rem ;
+    font-weight: lighter;
+    border-radius: 4%;
+    
+  }
+  
+  .loc-symbol{
+    margin-right:4px;
+  }
+  .container {
+    width:15%;
+    height: 50px;
+    padding: 0 2% 0 2%;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    border-radius: 2%;
+    gap:4%;
+    min-width: fit-content;
+    transition: all 250ms ease-in-out;
+    
+  }
+  
+  .left-container {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 53%;
+    transition: all 250ms ease-in-out;
+  
+    
+  }
+  
+  .result {
+    display: flex;
+    flex-basis: 100px;
+    gap: 30px;
+    margin-left: 14%;
+    flex-wrap: nowrap;
+    transition:wrap 250ms;
+    transition: all 250ms ease-in-out;
+    
+  }
+  
+  .loc-and-icon{
+    display:flex;
+    gap:20px;
+    justify-content: center;
+    transition: all 250ms ease-in-out;
+  }
+  
+  #icon{
+    margin-top: 50px;
+  }
+  
+  .deg {
+    font-size: 4rem;
+    text-align: center;
+    transition: all 250ms ease-in-out;
+    
+  }
+  
+  .algn{
+    position:relative;
+    top:50px;
+    height:fit-content;
+    text-align: center;
+    transition: all 250ms ease-in-out;
+  }
+  
+  p{
+    text-align: center;
+  }
+  
+  .input{
+    position: relative;
+    top:10%;
+    margin-bottom:60px;
+  }
+  table{
+    width:100%;
+  }
+  tr{
+    width:100%;
+  }
+  td{
+    padding-top: 40px;
+    width:50%;
+    margin-right:30%;
+  }
+  
+  .right{
+    text-align: end;
+  }
+  @media only screen and (min-width:601px) and (max-width: 1100px){
+  
+    .result{
+      flex-wrap:wrap;
+    }
+    .left-container{
+      gap:25%;
+    } 
+    #temperature{
+      margin: 0;
+      margin-left: 22%;
+    }
+
+    .loc-and-icon{
+      margin-left: 4%;
+    }
+  }
+
+  
+  
+  @media only screen and (max-width: 600px){
+  
+   
+  .base{
+    
+    flex-direction:column;
+    background-color:  rgb(2, 179, 210) ;
+    text-align: center;
+    font-size :1rem;
+    gap:14%;
+  }
+  
+  h1{
+    font-size: 1.75rem;;
+  }
+
+  
+  .container{
+   
+     flex-direction:column;
+     height:fit-content;
+     width:88%;
+     padding:0;
+     position: static;
+    margin-left: 6%;
+    margin-bottom:8%;
+    text-align: center;
+  }
+  
+  .left-container{
+    flex-direction: column;
+    height:fit-content;
+    margin-left: 6%;
+    text-align:center;
+  }
+  
+  .result{
+    flex-direction: column;
+    flex-basis: auto;
+    width:100%;
+    margin-left: 0;
+  }
+  
+  .input{
+    position:static;
+    margin-bottom:30px;
+  }
+  
+  
+  hr{
+   display:none;
+  }
+  .loc-and-icon{
+    width:100%;
+    min-height:40px;
+    text-align: center;
+  }
+  td{
+    padding-top:10px;
+    margin-top:10px;
+  }
+  .left{
+    text-align:left
+  }
+  .algn{
+    width:fit-content;
+    position:static;
+    padding-top: 40px;
+  }
+  
+  .deg{
+    font-size:2rem;
+    width:100%;
+    min-height: 40px;
+  }
+  
+  #temperature{
+    margin:0;
+  }
+  
+  #location-res,#time-and-date{
+    margin:0;
+  }
+  
+  #location-res{
+    margin-bottom: 24px !important;;
+  }
+  
+  #description{
+    margin-bottom:0;
+  }
+  #res-heading{
+    margin:0px;
+  }
+  
+  #icon{
+    margin-top:0;
+  }
+  }
+  
+  
+  
+  
